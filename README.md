@@ -83,7 +83,7 @@ First, you need to build docker image localy :
 ```docker build -t 
 git clone https://github.com/mqu/gitlab-container-registry-cleaner.git
 cd docker gitlab-container-registry-cleaner
-build -t gitlab-container-registry-cleaner .
+docker build -t gitlab-container-registry-cleaner .
 ```
 
 Then run docker image
