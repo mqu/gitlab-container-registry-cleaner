@@ -76,6 +76,24 @@ We provide a wrapper around the CLI that makes it easier to use. You can run:
 
 See below for more details on the commands.
 
+### Running with docker
+
+First, you need to build docker image localy : 
+
+```docker build -t 
+git clone https://github.com/mqu/gitlab-container-registry-cleaner.git
+cd docker gitlab-container-registry-cleaner
+build -t gitlab-container-registry-cleaner .
+```
+
+Then run docker image
+
+```
+docker run --rm -it gitlab-container-registry-cleaner help
+```
+
+you can choose what ever you want for docker image name ; here : `gitlab-container-registry-cleaner`
+
 ### List Container Repositories for entire instance, groups or projects
 
 The following command will list all instance-wide container repositories, checking 1 to 10000 repository IDs with a concurrency of 20 by default:
